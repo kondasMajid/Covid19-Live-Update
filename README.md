@@ -9,12 +9,12 @@ https://covid19-606ca.web.app/
 Angular version 8.3.22 
 ## 
 
-Homepage
-![Image of Yaktocat](https://pasteboard.co/J298RxX.png)
+
+![Image of Homepage](https://ibb.co/LxLDLjP)
 
 
 searched country
-![Image of Yaktocat](https://pasteboard.co/J29a1EB.png)
+![Image of searched country](https://ibb.co/MntGnZ4)
 
 
 
