@@ -9,17 +9,15 @@ https://covid19-606ca.web.app/
 Angular version 8.3.22 
 ## 
 
+Homepage
+![Image of Yaktocat](https://pasteboard.co/J298RxX.png)
+
+
+searched country
+![Image of Yaktocat](https://pasteboard.co/J29a1EB.png)
 
 
 
-ng serve      
-=======
-ng serve
-
-
-## Running port
-
-http://localhost:4200/
 
 
 ## Further details
