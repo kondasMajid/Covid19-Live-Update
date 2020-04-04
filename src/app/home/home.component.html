@@ -3,26 +3,26 @@
   <body>
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm masthead mb-auto fixed-top">
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-md-3 cen">
-            <h5 class="my-0 mr-md-auto font-weight-small">Corona Virus</h5>
+            <h5 class="my-0 mr-md-auto font-weight-small">Covid19 Updates</h5>
           </div>
           <div class="col-md-6">
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="text" placeholder="Enter country eg: Italy" aria-label="Search"
-                required autofocus [formControl]="input" name="user" [(ngModel)]="searchCountry" #box />
+                required autofocus [formControl]="input" name="user" [(ngModel)]="searchCountry" #box  style="margin-top: 20px;"/>
               <!-- <button (click)="getData()">search</button> -->
             </form>
           </div>
           <div class="col-md-3 cen">
-            <a class="btn btn-outline-primary text-center" (click)="getData()">search</a>
-          </div>
+            <a class="btn btn-outline-primary text-center padding-top: 6px; " (click)="getData()">search</a>
+          </div> 
         </div>
       </div>
     </div>
 
-    <div *ngIf="CoronaCase">
+    <div *ngIf="CoronaCase"  style="margin-top: 137px;">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-1 mx-auto text-center mt-5">
         <div class="container">
           <div class="row">
@@ -44,24 +44,24 @@
           <div class="row">
             <div class="col-md-3">
               <p class="text-primary">Today Cases</p>
-              <br />
+              
               <h4>{{ CoronaCase?.todayCases }}</h4>
-            </div>
+            </div><br />
             <div class="col-md-3">
               <p class="text-primary">Today Deaths</p>
-              <br />
+              
               <h4>{{ CoronaCase?.todayDeaths }}</h4>
-            </div>
+            </div><br />
             <div class="col-md-3">
               <p class="text-primary">Critical</p>
-              <br />
+              
               <h4>{{ CoronaCase?.critical }}</h4>
-            </div>
+            </div><br />
             <div class="col-md-3">
               <p class="text-primary">Active</p>
-              <br />
+              
               <h4>{{ CoronaCase?.active }}</h4>
-            </div>
+            </div><br />
           </div>
         </div>
       </div>
@@ -112,16 +112,16 @@
       </p>
 
       <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
+        <h1 class="display-4 ds">Hello, world!</h1>
         <p class="lead">Corona is real, kindly stay home and stay safe</p>
         <hr class="my-4" />
-
+ 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 cs">
             <p>Afected Countries </p>
             <h5>{{CoronaCaseSummary?.affectedCountries}}</h5>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 cs">
             <p>Active</p>
             <h5> {{CoronaCaseSummary?.active}}</h5>
           </div>
@@ -129,18 +129,19 @@
         </div>
         <br><br>
         <div class="row">
-          <div class="col-md-4">
-            <p>Cases </p>
+          <div class="col-md-4 cs">
+            <p class="text-info" >Cases </p>
             <h5 class="text-info">{{CoronaCaseSummary?.cases}}</h5>
           </div>
-          <div class="col-md-4">
-            <p>Deaths</p>
+          <br><br>
+          <div class="col-md-4 cs">
+            <p class="text-danger" >Deaths</p>
             <h5 class="text-danger"> {{CoronaCaseSummary?.deaths}}</h5>
-          </div>
-          <div class="col-md-4">
-            <p>Recovered</p>
+          </div><br><br>
+          <div class="col-md-4 cs">
+            <p class="text-success" >Recovered</p>
             <h5 class="text-success">{{CoronaCaseSummary?.recovered}}</h5>
-          </div>
+          </div><br><br>
         </div>
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">View more</a> -->
       </div>
