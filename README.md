@@ -2,23 +2,15 @@
 
 
 ## Demo 
-https://angular-git-e0784.firebaseapp.com/
+https://covid19-606ca.web.app/
 
 
 ## Development 
 Angular version 8.3.22 
 ## 
-Github API
-## 
-Angular Interceptors configured for the headers
-## 
-Bootstrap
 
-## Installing
-git clone  https://github.com/kondasMajid/Angular-Github.git
-## 
-npm install
-## 
+
+
 
 ng serve      
 =======
