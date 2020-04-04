@@ -9,12 +9,13 @@ https://covid19-606ca.web.app/
 Angular version 8.3.22 
 ## 
 
+##
+Homepage
+![Image of Homepage](https://i.ibb.co/LxLDLjP/image.png)
 
-![Image of Homepage](https://ibb.co/LxLDLjP)
 
-
-searched country
-![Image of searched country](https://i.ibb.co/LxLDLjP/image.png)
+##Search pages
+![Image of searched country](https://i.ibb.co/FY7KvM7/image.png)
 
 
 
