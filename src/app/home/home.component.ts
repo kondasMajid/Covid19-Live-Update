@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
         this.CoronaCaseCountry.push(this.Data);
         // retrun this.CoronaCaseCountry;
       // this.CoronaCaseCountry = res;
-       console.log(' countries',this.CoronaCaseCountry);
+      //  console.log(' countries',this.CoronaCaseCountry);
       }, err => {
         this.Error = err;
         console.log(Error)
@@ -82,7 +82,7 @@ export class HomeComponent implements OnInit {
     this.covidService.getAllRecords().subscribe(
       res => {
       this.CoronaCaseSummary = res;
-       console.log(this.CoronaCaseSummary);
+      //  console.log(this.CoronaCaseSummary);
     })
   }
 }
