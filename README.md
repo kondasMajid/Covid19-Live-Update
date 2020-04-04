@@ -11,11 +11,11 @@ Angular version 8.3.22
 
 ##
 Homepage
-![Image of Homepage](https://i.ibb.co/LxLDLjP/image.png)
+![Image of Homepage](https://github.com/kondasMajid/Covid19-Live-Update/blob/master/src/assets/img1.PNG)
 
 
 ##Search pages
-![Image of searched country](https://i.ibb.co/FY7KvM7/image.png)
+![Image of searched country](https://github.com/kondasMajid/Covid19-Live-Update/blob/master/src/assets/img2.PNG)
 
 
 
