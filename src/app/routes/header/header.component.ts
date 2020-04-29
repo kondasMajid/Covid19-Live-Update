@@ -1,24 +1,16 @@
-import { ICountry } from "./../shared/country.model";
-import {
-  Component,
-  OnInit,
-  Input,
-  ViewChild,
-  AfterViewInit,
-  ElementRef,
-  QueryList,
-  ViewChildren
-} from "@angular/core";
-import { CovidService } from "../shared/covid.service";
-import { FormControl } from "@angular/forms";
-import { debounceTime, distinctUntilChanged } from "rxjs/operators";
+import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { CovidService } from 'src/app/shared/covid.service';
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"]
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HeaderComponent implements OnInit {
+
+  // constructor() { }
+
   CoronaCase: any;
   Error;
   input: FormControl;
@@ -91,4 +83,5 @@ export class HomeComponent implements OnInit {
       //  console.log(this.CoronaCaseSummary);
     })
   }
+
 }

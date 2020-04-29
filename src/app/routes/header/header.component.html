@@ -1,0 +1,21 @@
+<div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm masthead mb-auto fixed-top">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-3 cen">
+            <h5 class="my-0  font-weight-small  " style="margin-right: 104px;
+            ">Covid19 Updates</h5>
+          </div>
+          <div class="col-md-6">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Enter country eg: Italy" aria-label="Search"
+                required autofocus [formControl]="input" name="user"     (keyup.enter)="getData(searchCountry)" [(ngModel)]="searchCountry"   style="margin-top: 20px;"/>
+            </form>
+          </div>
+          <div class="col-md-3 cen">
+            <a class="btn btn-outline-primary text-center padding-top: 6px;  mt-3 " style="    margin-left: 104px;
+            " (click)="getData(searchCountry)">search</a>
+          </div> 
+        </div>
+      </div>
+    </div>
