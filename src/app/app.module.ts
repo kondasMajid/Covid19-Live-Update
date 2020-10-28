@@ -13,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'all-countries', component: AllCountriesComponent },
 ];
 
@@ -31,6 +32,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
     
   ],
+  exports: [RouterModule],
   providers: [CovidService,
     //  {provide: HTTP_INTERCEPTORS,
     //  useClass:GitHubHttpInterceptor,

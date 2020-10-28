@@ -12,6 +12,7 @@ import {
 import { CovidService } from "../shared/covid.service";
 import { FormControl } from "@angular/forms";
 import { debounceTime, distinctUntilChanged } from "rxjs/operators";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-home",
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
   CoronaCase: any;
   Error;
   input: FormControl;
-  constructor(private covidService: CovidService) {
+  constructor(private covidService: CovidService, private router:Router) {
     this.input = new FormControl();
   }
 
@@ -90,5 +91,9 @@ export class HomeComponent implements OnInit {
       this.CoronaCaseSummary = res;
       //  console.log(this.CoronaCaseSummary);
     })
+  }
+  reloadBack(){
+    // this.router
+    this.router.navigate(['/all-countries'])
   }
 }
