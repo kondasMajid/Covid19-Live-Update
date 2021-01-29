@@ -19,47 +19,35 @@ export class HeaderComponent implements OnInit {
   }
 
   country; cases; todayCases; deaths;
-  todayDeaths;  recovered;  active;  critical;
-  casesPerOneMillion;  deathsPerOneMillion;  updated;
+  todayDeaths; recovered; active; critical;
+  casesPerOneMillion; deathsPerOneMillion; updated;
 
   searchCountry = this.covidService.countryInput;
-  CoronaCaseCountry =[];
+  CoronaCaseCountry = [];
   CoronaCaseSummary;
   Data;
   ngOnInit() {
-    // this.getData();
     this.getContry()
     this.getDataSummary()
- 
-  }
 
-  // getData(){
-  //   return  this.covidService.getData(this.searchCountry).subscribe(res => {
-  //     this.CoronaCase =  res;
-  //     console.log(this.CoronaCase);
-  //   })
-  // }
-  getData(value:string) {
+  }
+  getData(value: string) {
 
     if (!value) {
       alert('no country entered, please enter a country name and search')
-    }
-
-    // this.covidService.getData(this.searchCountry).subscribe(
-      this.covidService.getData(value).subscribe(
+    } this.covidService.getData(value).subscribe(
       res => {
-      this.CoronaCase = res;
+        this.CoronaCase = res;
 
-     
-    if(this.CoronaCase === ' '){
-      alert('please enter country')
-    }
-       console.log(this.CoronaCase);
-      // return
-    } , err => {
-      this.Error = err;
-      console.log(Error)
-    })
+        if (this.CoronaCase === ' ') {
+          alert('please enter country')
+        }
+        console.log(this.CoronaCase);
+        // return
+      }, err => {
+        this.Error = err;
+        console.log(Error)
+      })
   }
 
   getContry() {
@@ -68,20 +56,19 @@ export class HeaderComponent implements OnInit {
         this.Data = res;
         this.CoronaCaseCountry.push(this.Data);
         // retrun this.CoronaCaseCountry;
-      // this.CoronaCaseCountry = res;
-      //  console.log(' countries',this.CoronaCaseCountry);
+        // this.CoronaCaseCountry = res;
+        //  console.log(' countries',this.CoronaCaseCountry);
       }, err => {
         this.Error = err;
         console.log(Error)
       })
   }
-
   getDataSummary() {
     this.covidService.getAllRecords().subscribe(
       res => {
-      this.CoronaCaseSummary = res;
-      //  console.log(this.CoronaCaseSummary);
-    })
+        this.CoronaCaseSummary = res;
+        //  console.log(this.CoronaCaseSummary);
+      })
   }
 
 }

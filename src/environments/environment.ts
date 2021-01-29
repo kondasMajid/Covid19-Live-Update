@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  ApiUrl: "",
-  ApiAll: ""
+  ApiUrl: "https://corona.lmao.ninja/v2/countries/",
+  ApiAll: "https://corona.lmao.ninja/v2/all"
 }; 

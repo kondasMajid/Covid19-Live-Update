@@ -20,12 +20,10 @@ export class CovidService {
   countryInput;
   country;
   result;
-  constructor(private http: HttpClient) {}
-
+  constructor(private http: HttpClient) { }
   getData(country: string) {
     return this.http.get(this.ApiURL + country);
   }
-
   getCountry() {
     return this.http.get(this.ApiURL);
   }

@@ -1,5 +1,5 @@
 .ng-template {
-    margin-top: 240px
+    margin-top: 240px;
 }
 
 .scroll {
@@ -16,10 +16,6 @@ html {
     html {
         font-size: 16px;
     }
-}
-
-.container {
-    /* max-width: 960px; */
 }
 
 .pricing-header {
@@ -42,14 +38,10 @@ html {
     text-align: center;
 }
 
-.bold {
-    /* font-weight: bolder; */
-}
-
 .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #e9ecef;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     margin-top: 120px;
 }
