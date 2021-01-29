@@ -42,20 +42,11 @@ export class HomeComponent implements OnInit {
  
   }
 
-  // getData(){
-  //   return  this.covidService.getData(this.searchCountry).subscribe(res => {
-  //     this.CoronaCase =  res;
-  //     console.log(this.CoronaCase);
-  //   })
-  // }
   getData(value:string) {
 
     if (!value) {
       alert('no country entered, please enter a country name and search')
-    }
-
-    // this.covidService.getData(this.searchCountry).subscribe(
-      this.covidService.getData(value).subscribe(
+    }  this.covidService.getData(value).subscribe(
       res => {
       this.CoronaCase = res;
 
@@ -76,9 +67,6 @@ export class HomeComponent implements OnInit {
       res => {
         this.Data = res;
         this.CoronaCaseCountry.push(this.Data);
-        // retrun this.CoronaCaseCountry;
-      // this.CoronaCaseCountry = res;
-      //  console.log(' countries',this.CoronaCaseCountry);
       }, err => {
         this.Error = err;
         console.log(Error)
@@ -89,7 +77,6 @@ export class HomeComponent implements OnInit {
     this.covidService.getAllRecords().subscribe(
       res => {
       this.CoronaCaseSummary = res;
-      //  console.log(this.CoronaCaseSummary);
     })
   }
   reloadBack(){
